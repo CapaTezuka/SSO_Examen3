@@ -47,7 +47,7 @@ then
 	echo "El sistema es: "
 	echo "$NOMBRE"
 		echo "Detectando ClamAV"
-		Flag=$(dpkg-query -l | grep clamav)
+		INS=$(dpkg-query -l | grep clamav)
 		if  (apt list clamav); 
 		then
 			echo "ClamAV ya está instalado "
